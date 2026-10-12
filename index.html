@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Yoon!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main>
+    <section class="screen active" id="intro">
+      <p class="small">✦ A SPECIAL MESSAGE FOR ✦</p>
+      <h1>YOON</h1>
+      <p class="subtitle">Your own little universe awaits...</p>
+      <button id="enterButton">GETTING YOUR SURPRISE READY ✦</button>
+    </section>
+
+    <section class="screen" id="countdown">
+      <p class="small">SOMETHING MAGICAL IS COMING</p>
+      <div id="countNumber">3</div>
+    </section>
+
+    <section class="screen" id="birthday">
+      <p class="small">TODAY IS ALL ABOUT YOU</p>
+      <h1>HAPPY<br>BIRTHDAY!</h1>
+      <p class="subtitle">Happy 17th Birthday, Yoon ♡</p>
+      <button data-next="cake">LET'S CELEBRATE ✦</button>
+    </section>
+
+    <section class="screen" id="cake">
+      <p class="small">MAKE A LITTLE WISH</p>
+      <div class="cake">🎂</div>
+      <p class="subtitle">Close your eyes and make a wish.</p>
+      <button id="wishButton">I MADE A WISH ✧</button>
+      <button class="hidden" id="cakeNext" data-next="memories">NEXT ✦</button>
+    </section>
+
+    <section class="screen" id="memories">
+      <p class="small">LITTLE MOMENTS, BIG MEMORIES</p>
+      <h2>Our Memories ♡</h2>
+      <div class="photos">
+        <img src="images/photo1.jpg" alt="Our memory 1">
+        <img src="images/photo2.jpg" alt="Our memory 2">
+        <img src="images/photo3.jpg" alt="Our memory 3">
+      </div>
+      <p class="subtitle">Every memory with you is special.</p>
+      <button data-next="letter">ONE MORE THING ✦</button>
+    </section>
+
+    <section class="screen" id="letter">
+      <p class="small">A LITTLE LETTER FOR YOU</p>
+      <div class="envelope">💌</div>
+      <button id="letterButton">OPEN YOUR LETTER ♡</button>
+      <div id="letterText" class="hidden">
+        <h2>Dear Yoon,</h2>
+        <p>
+          Happy Birthday! I hope your 17th year brings you
+          happiness, beautiful memories, and countless reasons
+          to smile. Thank you for being you. You deserve all
+          the lovely things in this world. ♡
+        </p>
+        <p>With lots of love, your friend ♡</p>
+        <button data-next="final">MY LAST SURPRISE ✦</button>
+      </div>
+    </section>
+
+    <section class="screen" id="final">
+      <div class="sparkle">✧ ✦ ✧</div>
+      <h1>YOU ARE<br>SO SPECIAL!</h1>
+      <p class="subtitle">May your dreams find their way to you.</p>
+      <div class="cake">🎉🎂🎉</div>
+      <p>Happy Birthday, Yoon! ♡</p>
+      <button id="replayButton">WATCH AGAIN ↻</button>
+    </section>
+  </main>
+  <audio id="bgMusic" src="music/birthday.mp3"></audio>
+  
+  <script src="script.js"></script>
+</body>
+</html>
